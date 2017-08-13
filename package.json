@@ -1,0 +1,31 @@
+{
+  "name": "angular_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WakeUpAmen/angular_example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WakeUpAmen/angular_example/issues"
+  },
+  "homepage": "https://github.com/WakeUpAmen/angular_example#readme",
+  "dependencies": {
+    "gulp-webpack": "^1.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  }
+}
