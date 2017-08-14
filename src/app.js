@@ -1,6 +1,9 @@
 import angular from 'angular';
 import '../style/app.css';
 
+var jsonfile = require('../data/rest.json')
+//console.log(jsonfile);
+
 let app = () => {
   return {
     template: require('./app.html'),
@@ -12,9 +15,16 @@ let app = () => {
 class AppCtrl {
   constructor($http, $scope){
     // read the json file
-    $http.get("../data/rest.json").then(function(data) {
+
+    $http.get(jsonfile).then(function(data) {
     // console.log(data.data);
     $scope.contents = data.data;
+    // require all the icon png files, so they will be moved to dist/ 
+    for(var i=0;i<$scope.contents.length;i++){
+      var tmp_path = require('../icons/' + $scope.contents[i].tags + '.png');
+      //console.log(tmp_path)
+      $scope.contents[i].iconpath = tmp_path;
+    }
     //debugger;
    });
   }

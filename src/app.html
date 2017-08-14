@@ -3,7 +3,8 @@
 			<div class = "content" id="content">
 			
 				<div class = "contents" ng-repeat="content in contents">
-						<img src="../icons/{{content.tags}}.png" alt="logo" ">
+<!-- 						<img src="../icons/{{content.tags}}.png" alt="logo" "> -->
+						<img src={{content.iconpath}} alt="logo" ">
 			      		<p id = "shopname">{{content.name}}</p>
 			      		<p id = "deliveryfee"> ${{content.delivery.fee}} 运费 · ${{content.delivery.minimum}} 起送</p>
 				</div>

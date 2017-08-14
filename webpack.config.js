@@ -12,7 +12,8 @@ module.exports = function makeConfig() {
         loaders: [
             { test: /\.css$/, loader: "style!css" },
             { test: /\.js$/, loader: 'babel', exclude: /node_modules/},
-            { test: /\.html$/, loader: "raw" }
+            { test: /\.html$/, loader: "raw" },
+	    { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3|json)$/, loader: "file" }
         ]
     };
     config.plugins = [new HtmlWebpackPlugin({
