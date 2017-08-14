@@ -11,10 +11,9 @@ let app = () => {
 
 class AppCtrl {
   constructor($http, $scope){
-  // read the json file
+    // read the json file
     $http.get("../data/rest.json").then(function(data) {
     // console.log(data.data);
-    // console.log(typeof(data));
     $scope.contents = data.data;
     //debugger;
    });
