@@ -23,12 +23,17 @@ main {
 text-align: center;
 margin-bottom: 0.5cm;
 }
+#imgs{
+   width: 100px;
+   height: auto;
+
+}
 #shopname{
 font-size: 1.6em;
 margin: 0;
 }
 #deliveryfee{
-font-size: 0.5em;
+font-size: 0.7em;
 color: gray;
 margin:0;
 }
